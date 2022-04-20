@@ -64,4 +64,6 @@ def clean_superstore_df(df):
     df.ship_date = pd.to_datetime(df.ship_date)
     df['ship_time'] = df.ship_date - df.order_date
     df = df.drop(columns= ['region_id', 'cat_id'])
+    return df
+
     
