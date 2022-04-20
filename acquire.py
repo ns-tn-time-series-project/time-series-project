@@ -66,4 +66,19 @@ def clean_superstore_df(df):
     df = df.drop(columns= ['region_id', 'cat_id'])
     return df
 
+def get_superstore_splits(df):
+    train_size = round(len(df)*.5)
+    validate_size = round(len(df)*.3)
+    validate_end_idx = train_size + validate_size
+    test_size = (len(df) - train_size - validate_size)
+
+    train = df[:train_size]
+    validate = df[train_size:validate_end_idx]
+    test = df[validate_end_idx:]
+
+    assert train_size + validate_size + test_size == len(df)
+
+    return train, validate, test
+    
+
     
