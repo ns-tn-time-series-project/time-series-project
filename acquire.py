@@ -27,7 +27,7 @@ def get_superstore_df():
     '''
     df = pd.read_sql(query, url)
     print('Copying to CSV...')
-    df.to_csv(filename)
+    df.to_csv(filename, index=False)
     return df
 
 
@@ -87,6 +87,7 @@ def get_superstore_splits(df):
     assert train_size + validate_size + test_size == len(df)
 
     return train, validate, test
+
     
 
     
