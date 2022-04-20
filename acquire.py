@@ -9,6 +9,9 @@ import os
 
 
 def get_superstore_df():
+    '''
+    Returns a dataframe from the superstore_db in Codeup's MySQL server
+    '''
     filename = 'superstore_inner.csv'
     if os.path.exists(filename):
         print('Reading from CSV file...')
@@ -24,7 +27,7 @@ def get_superstore_df():
     '''
     df = pd.read_sql(query, url)
     print('Copying to CSV...')
-    df.to_csv(filename)
+    df.to_csv(filename, index=False)
     return df
 
 
@@ -61,9 +64,30 @@ def clean_superstore_df(df):
     df.order_date = pd.to_datetime(df.order_date)
     df.order_date = df.order_date.sort_values()
     df = df.set_index(df.order_date)
+    df = df.sort_index()
     df.ship_date = pd.to_datetime(df.ship_date)
     df['ship_time'] = df.ship_date - df.order_date
     df = df.drop(columns= ['region_id', 'cat_id'])
     return df
+
+def get_superstore_splits(df):
+    '''
+    Takes in a dataframe (of time-series indexed data),
+    returns train, validate, and test splits of the dataframe
+    '''
+    train_size = round(len(df)*.5)
+    validate_size = round(len(df)*.3)
+    validate_end_idx = train_size + validate_size
+    test_size = (len(df) - train_size - validate_size)
+
+    train = df[:train_size]
+    validate = df[train_size:validate_end_idx]
+    test = df[validate_end_idx:]
+
+    assert train_size + validate_size + test_size == len(df)
+
+    return train, validate, test
+
+    
 
     
