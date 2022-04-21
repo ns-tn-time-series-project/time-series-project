@@ -67,7 +67,13 @@ def clean_superstore_df(df):
     df = df.sort_index()
     df.ship_date = pd.to_datetime(df.ship_date)
     df['ship_time'] = df.ship_date - df.order_date
+    df['unit_cost'] = (df.sales - df.profit) / df.quantity
+    # Cast postal code as int type instead of float
+    df.postal_code = df.postal_code.astype('int64')
+    df['profit_margin'] = df.profit / (df.sales - (df.sales * df.discount))
+    df['revenue'] = df.sales - (df.sales * df.discount)
     df = df.drop(columns= ['region_id', 'cat_id'])
+
     return df
 
 def get_superstore_splits(df):
