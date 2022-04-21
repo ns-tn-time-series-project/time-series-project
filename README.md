@@ -32,7 +32,7 @@
 ### Project Planning:
 - First, write a function to pull the correct dataset from the database and save it as a csv in the local directory.
 
-- Save the data acquision function in a seperate acquire.py file for future use
+- Save the data acquision function in a separate acquire.py file for future use
 
 - Then, write a function that prepares the data by dealing with missing values, removing unneeded columns, renames columns, and creating engineered feature columns
 
@@ -46,7 +46,7 @@
 
 - Analyze the data groups informed by initial exploration to determine targets for the marketing team
 
-- Document key findings, recomendations, and next steps
+- Document key findings, recommendations, and next steps
 
 ### How to Reproduce this Project and Findings:
 
@@ -58,7 +58,7 @@ To reproduce my findings on this project you will need:
 
 - The jupyter notebook in this repository named "final_report_time_series_project" which contains the code used to produce the project.
 
-- Libraries used are numpy, pandas, seaborn, sklearn, scipy, and matplotlib. All imports are included at the top of the notebook.
+- Libraries used are numpy, pandas, seaborn, scipy, and matplotlib. All imports are included at the top of the notebook.
 
 ### Summary:
 
@@ -88,6 +88,6 @@ Recomendations based on customer research
 
 ### Next Steps:
 
-- 
+- Explore possibilities for Furniture and Office Supplies product categories, and further analyze the impact of discounts and price points for individual products.
 
 - If we had more time to analyze customer groups we would conduct a RFM analysis on the other 3 regions to identify focus groups for targeted marketing in those regions
