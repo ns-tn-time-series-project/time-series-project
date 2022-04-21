@@ -62,7 +62,9 @@ To reproduce my findings on this project you will need:
 
 ### Summary:
 
-- 
+- Profit margins for the company as a whole are down. Furniture and Office Supplies product categories are not performing as well as they have in the past.
+
+- The Technology product category is the safest bet for ROI on Marketing efforts and will likely require the least interdepartment coordination.
 
 - The Central region should be a priority for marketing efforts since we have seen the largest decrease in sales and order value in that region
 
@@ -72,9 +74,13 @@ To reproduce my findings on this project you will need:
 
 ### Recomendations:
 
-- 
+Recomendations based on product research:
 
-Recomendations based on customer research
+- Focus any new campaigns on Technology products for the highest ROI with the least effort.
+
+- Consider scaling back discounts, as they may eat away at profits.
+
+Recomendations based on customer research:
 
 - Customers with a "Top Customer" or "High Value Customer" rating are our best customers and would most likely respond well to marketing focused on loyalty programs or early access to new products
 
