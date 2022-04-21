@@ -17,7 +17,7 @@
 | Variable | Meaning |
 |----------|---------|
 |order_date|the date that an order was placed|
-|ship+date|the date the order was shipped to the customer|
+|ship_date|the date the order was shipped to the customer|
 |sales|the sales value in us dollars of the order|
 |quantity|the number of a specific product that was included in the order|
 |discount|the percentage of discount applied to the specific order in decimal format|
