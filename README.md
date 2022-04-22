@@ -32,7 +32,7 @@
 ### Project Planning:
 - First, write a function to pull the correct dataset from the database and save it as a csv in the local directory.
 
-- Save the data acquision function in a separate acquire.py file for future use
+- Save the data acquisition function in a separate acquire.py file for future use
 
 - Then, write a function that prepares the data by dealing with missing values, removing unneeded columns, renames columns, and creating engineered feature columns
 
@@ -72,11 +72,13 @@ To reproduce my findings on this project you will need:
 
 - Customer groupings resulting from the analysis are available as a csv file for use by the marketing department
 
-### Recomendations:
+### Recommendations:
 
 Recomendations based on product research:
 
 - Focus any new campaigns on Technology products for the highest ROI with the least effort.
+
+- Office Supplies and Furniture need help, but any efforts to fix them should be pushed down the line for now.
 
 - Consider scaling back discounts, as they may eat away at profits.
 
@@ -96,4 +98,4 @@ Recomendations based on customer research:
 
 - Explore possibilities for Furniture and Office Supplies product categories, and further analyze the impact of discounts and price points for individual products.
 
-- If we had more time to analyze customer groups we would conduct a RFM analysis on the other 3 regions to identify focus groups for targeted marketing in those regions
+- If we had more time to analyze customer groups we would conduct a RFM analysis on the other 3 regions to identify focus groups for targeted marketing in those regions.
